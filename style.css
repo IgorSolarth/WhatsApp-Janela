@@ -1,0 +1,25 @@
+#janela_wp {
+    position: fixed;
+    width: 0px;
+    height: 220px;
+    background-color: #27ae60;
+    border-radius: 7px;
+    right: 0px;
+    top: 250px;
+    transition: 1s;
+}
+.icon-menu {
+    position: fixed;
+    right: 0px;
+    top: 215px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+#janela_wp a {
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
