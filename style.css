@@ -1,25 +1,67 @@
-#janela_wp {
-    position: fixed;
-    width: 0px;
-    height: 220px;
-    background-color: #27ae60;
-    border-radius: 7px;
-    right: 0px;
-    top: 250px;
-    transition: 1s;
-}
-.icon-menu {
-    position: fixed;
-    right: 0px;
-    top: 215px;
-    margin-right: 60px;
-    cursor: pointer;
-}
+.whatsapp-duplo{margin: 0}	
+	#abre_janela_wp,
+	#fecha_janela_wp,
+	#janela_wp{
+		position: fixed;
+		right: 0;
+		top: 160px;
+		z-index: 500;
+		background: #27ae60;
+		color: #FFF;
 
-#janela_wp a {
-    text-decoration: none;
-    color: white;
-    margin: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+		-webkit-border-top-left-radius: .3rem;
+		-webkit-border-bottom-left-radius: .3rem;
+		-moz-border-radius-topleft: .3rem;
+		-moz-border-radius-bottomleft: .3rem;
+		border-top-left-radius: .3rem;
+		border-bottom-left-radius: .3rem;
+		-webkit-box-shadow: 0 0 0.3rem 0 rgba(50,50,50,0.75);
+		-moz-box-shadow: 0 0 .3rem 0 rgba(50,50,50,0.75);
+		box-shadow: 0 0 0.3rem 0 rgba(50,50,50,0.75);
+		background-color: #27ae60;
+
+		-webkit-transition: all 0.2s ease-in-out;
+		   -moz-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			 -o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;		
+	}
+
+	#abre_janela_wp,
+	#fecha_janela_wp{
+		z-index: 500;
+		top: 95px;
+        cursor: pointer;
+	}
+		#abre_janela_wp{right: -50px}
+
+	#abre_janela_wp span, 
+	#fecha_janela_wp span{
+		display: block;
+		font-size: 20px;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		text-align: center;
+		cursor: pointer;
+	}
+		#abre_janela_wp span i, 
+		#fecha_janela_wp span i{display: none;}	
+
+	#janela_wp{
+		z-index: 5800;
+		padding: 10px 15px;
+		text-align: right;		
+	}
+		#janela_wp a,
+		#janela_wp a:hover{
+			font-size: 18px;
+			text-decoration: none;
+			color: #FFF
+		}
+		#janela_wp a .ddd{font-size: 14px;}
+
+	#abre_janela_wp.open    {right: 0 !important;}
+	#fecha_janela_wp.close  {right: -60px !important;}
+	#janela_wp.close        {right: -250px !important;}
 
